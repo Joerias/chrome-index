@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/img/i.ico" />
+    <title>chrome index</title>
+    <link rel="stylesheet/less" type="text/css" href="assets/css/style.less">
+    <script src="assets/js/less.min.js"></script>
+    <script src="assets/js/angular.js"></script>
+</head>
+
+<body class=" bg_theme3">
+    <div class="wrap wallpaper_filter"></div>
+    <div class="wrap container">
+        <ul class="list" ng-controller="listController">
+            <li ng-repeat="item in websites">
+                <a href="{{item.url}}" data-theme-color="{{item.bg}}" ng-if="item.name">
+                    <span class="back">{{item.name}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/data.js"></script>
+</html>

@@ -1,0 +1,9 @@
+{
+    "name":"my index",
+    "description":"update: 增加链接",
+    "manifest_version":2,
+    "version":"1.7",
+    "chrome_url_overrides":{
+        "newtab":"index.html"
+    }
+}
